@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Escuela de Español</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+    }
+    header {
+      background-color: #f44336;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+    .hero {
+      background: url('hero.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+    section {
+      padding: 60px 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .cursos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .curso {
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <h2>Mi Escuela de Español</h2>
+    </div>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#cursos">Cursos</a>
+      <a href="#sobre">Sobre nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="inicio">
+    <h1>Aprende español desde cualquier lugar</h1>
+    <p>Cursos online para todos los niveles</p>
+  </section>
+
+  <section id="cursos">
+    <h2>Cursos disponibles</h2>
+    <div class="cursos">
+      <div class="curso">
+        <h3>Español A1</h3>
+        <p>Curso para principiantes. Aprende lo básico del idioma.</p>
+      </div>
+      <div class="curso">
+        <h3>Español A2</h3>
+        <p>Refuerza tus conocimientos con situaciones reales.</p>
+      </div>
+      <div class="curso">
+        <h3>Español B1</h3>
+        <p>Mejora tu fluidez y comprensión oral y escrita.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre nosotros</h2>
+    <p>Somos una escuela online dedicada a enseñar español con pasión y metodología moderna. Nuestros profesores son nativos y contamos con más de 10 años de experiencia en enseñanza a estudiantes internacionales.</p>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>¿Tienes preguntas? Escríbenos a: <a href="mailto:info@escuela.com">info@escuela.com</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mi Escuela de Español. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
