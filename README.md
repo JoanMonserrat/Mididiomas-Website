@@ -6,4 +6,7 @@ Requirements:
 
 - Make a login with user and password. //🐣 actually should be 2 kinds of users, one is student, one is teachers.
 
+
 - After login go to a different page with all the course. One lateral menu (right side) and in the center there are the lessons. Speaking/Grammar/
+
+ https://joanmonserrat.github.io/Mididiomas-Website/
