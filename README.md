@@ -9,4 +9,5 @@ Requirements:
 - Make a login with user and password. //🐣 actually should be 2 kinds of users, one is student, one is teachers.
 
 - After login go to a different page with all the course. One lateral menu (right side) and in the center there are the lessons. 
-- - Menu：Speaking/Listening/Reading/Grammar/Examens/pronunciación/Audio de Aula
+  - Menu：Speaking/Listening/Reading/Grammar/Examens/pronunciación/Audio de Aula
+  - Inside each page, add more tags? to organize the different kinds of practice better.
