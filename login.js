@@ -24,4 +24,9 @@ document.addEventListener('DOMContentLoaded', function () {
     alert('Has iniciado sesión (simulado)');
     modal.style.display = 'none';
   });
+
+  function goToAnotherPage() {
+  window.location.href = "practice.html"; 
+}
+  
 });
