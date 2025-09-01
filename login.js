@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function () {
 form.addEventListener('submit', function (e) {
   e.preventDefault();
   modal.style.display = 'none';
-  window.location.href = "practice.html"; 
 });
   
 });
