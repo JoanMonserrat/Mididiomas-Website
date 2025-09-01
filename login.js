@@ -27,6 +27,3 @@ document.addEventListener('DOMContentLoaded', function () {
   
 });
 
-  function goToAnotherPage() {
-  window.location.href = "practice.html"; 
-}
