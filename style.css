@@ -46,3 +46,24 @@
       text-align: center;
       padding: 20px;
     }
+   .gallery-container {
+      width: 100%;
+      overflow-x: auto; /* Permite el scroll horizontal */
+      white-space: nowrap; /* Evita que las imágenes hagan salto de línea */
+      border: 1px solid #ccc;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .gallery-container img {
+      height: 150px;
+      margin-right: 10px;
+      display: inline-block;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-container img:hover {
+      transform: scale(1.1);
+    }
