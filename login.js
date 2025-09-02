@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   loginBoton.addEventListener('click', function() {
-    window.location.href = 'https://www.ejemplo.com';
+    window.location.href = 'practice.html';
   });
 });
 
