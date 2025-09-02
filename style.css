@@ -67,3 +67,33 @@
     .gallery-container img:hover {
       transform: scale(1.1);
     }
+
+.sidebar {
+  width: 200px;
+  background-color: #333;
+  color: white;
+  height: 100vh; /* 占满屏幕高度 */
+  padding-top: 20px;
+  position: fixed; /* 固定在左边 */
+  top: 0;
+  left: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 15px 20px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.sidebar ul li a:hover {
+  background-color: #575757;
+}
