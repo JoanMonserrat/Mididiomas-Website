@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const closeBtn = document.getElementById('closeLogin');
   const modal = document.getElementById('loginModal');
   const form = document.getElementById('loginForm');
+  const loginBoton = document.getElementById('LoginBoton');
 
   openBtn.addEventListener('click', function (e) {
     e.preventDefault();
@@ -19,11 +20,13 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-form.addEventListener('submit', function (e) {
-  e.preventDefault();
-  modal.style.display = 'none';
-});
-  
-});
-document.getElementById('LoginBoton').addEventListener('click', function() {
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    modal.style.display = 'none';
+  });
+
+  loginBoton.addEventListener('click', function() {
     window.location.href = 'https://www.ejemplo.com';
+  });
+});
+
