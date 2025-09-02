@@ -25,4 +25,5 @@ form.addEventListener('submit', function (e) {
 });
   
 });
-
+document.getElementById('LoginBoton').addEventListener('click', function() {
+    window.location.href = 'https://www.ejemplo.com';
