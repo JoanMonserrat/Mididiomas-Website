@@ -75,7 +75,7 @@
   height: 100vh; /* 占满屏幕高度 */
   padding-top: 20px;
   position: fixed; /* 固定在左边 */
-  top: 0;
+  top: 60px;
   left: 0;
 }
 
