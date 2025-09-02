@@ -9,6 +9,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      height: 120px;
     }
     nav a {
       color: white;
@@ -75,7 +76,7 @@
   height: 100vh; /* 占满屏幕高度 */
   padding-top: 20px;
   position: fixed; /* 固定在左边 */
-  top: 120px;
+  margin-top: 120px;
   left: 0;
   text-align: center; 
 }
