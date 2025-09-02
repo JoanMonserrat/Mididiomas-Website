@@ -1,99 +1,142 @@
- body {
-      font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
-    }
-    header {
-      background-color: #f44336;
-      color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: 120px;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 20px;
-    }
-    .hero {
-      background: url('hero.jpg') center/cover no-repeat;
-      color: white;
-      text-align: center;
-      padding: 100px 20px;
-    }
-    .hero h1 {
-      font-size: 2.5rem;
-    }
-    section {
-      padding: 60px 40px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .cursos {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .curso {
-      border: 1px solid #ddd;
-      padding: 20px;
-      border-radius: 8px;
-      background-color: #f9f9f9;
-    }
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-   .gallery-container {
-      width: 100%;
-      overflow-x: auto; /* Permite el scroll horizontal */
-      white-space: nowrap; /* Evita que las imágenes hagan salto de línea */
-      border: 1px solid #ccc;
-      padding: 10px;
-      box-sizing: border-box;
-    }
+/* -------------------- RESET GENERAL -------------------- */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
 
-    .gallery-container img {
-      height: 150px;
-      margin-right: 10px;
-      display: inline-block;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: transform 0.3s ease;
-    }
+/* -------------------- HEADER -------------------- */
+header {
+  background-color: #f44336;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  padding: 0 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-    .gallery-container img:hover {
-      transform: scale(1.1);
-    }
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
 
+header nav a:hover {
+  color: #ffd6d6;
+}
+
+/* -------------------- HERO -------------------- */
+.hero {
+  background: url('hero.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+/* -------------------- SECTIONS -------------------- */
+section {
+  padding: 60px 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* -------------------- CURSOS GRID -------------------- */
+.cursos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.curso {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: box-shadow 0.3s ease;
+}
+
+.curso:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* -------------------- GALLERY -------------------- */
+.gallery-container {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.gallery-container img {
+  height: 150px;
+  margin-right: 10px;
+  display: inline-block;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-container img:hover {
+  transform: scale(1.1);
+}
+
+/* -------------------- SIDEBAR -------------------- */
 .sidebar {
   width: 200px;
   background-color: #333;
   color: white;
-  height: 100vh; /* 占满屏幕高度 *
-  position: fixed; /* 固定在左边 */
-  margin-top: 120px;
+  height: 100vh;
+  position: fixed;
+  top: 120px; /* En lugar de margin-top */
   left: 0;
-  text-align: center; 
+  padding-top: 20px;
+  text-align: center;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
 }
 
 .sidebar ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .sidebar ul li {
-  padding: 15px 20px;
+  padding: 15px 0;
 }
 
 .sidebar ul li a {
   color: white;
   text-decoration: none;
   display: block;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
 }
 
 .sidebar ul li a:hover {
   background-color: #575757;
 }
+
+/* -------------------- FOOTER -------------------- */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+}
+
